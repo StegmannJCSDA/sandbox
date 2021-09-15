@@ -1,6 +1,5 @@
 os:
   - linux
-  - osx
 
 language: cpp
 
@@ -30,3 +29,6 @@ script:
       export CC=gcc-7 ;
       export CXX=g++-7 ;
     fi
+  - mkdir build && cd build
+  - cmake ..
+  - make 
