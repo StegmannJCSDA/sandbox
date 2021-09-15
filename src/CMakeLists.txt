@@ -10,5 +10,6 @@ set_target_properties(mylib PROPERTIES PUBLIC_HEADER planck.h)
 target_include_directories(mylib PRIVATE src)
 
 install(TARGETS mylib
+	ARCHIVE DESTINATION lib/static
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
